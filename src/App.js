@@ -1,19 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import LandingPageSection from './components/LandingPageSection';
-import TutorCard from './components/TutorCard';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import FindTutors from './components/FindTutors';
+import BecomeTutor from './components/BecomeTutor';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <LandingPageSection/>
-      <TutorCard/>
-      <TutorCard/>
-      <TutorCard/>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar/>
+        <div>
+        <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/FindTutors" element={<FindTutors/>}/>
+            <Route path="/BecomeTutors" element={<BecomeTutor/>}/>
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
