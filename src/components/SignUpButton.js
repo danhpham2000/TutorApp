@@ -5,7 +5,7 @@ function SignUpButton() {
   return (
     <div>
         <br/>
-        <Button variant="warning" style={{ borderRadius: "100px" }}>
+        <Button href="/SignUp" variant="warning" style={{ borderRadius: "100px" }}>
         Sign up to message tutors
       </Button>
       <br/>

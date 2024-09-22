@@ -14,21 +14,24 @@ const LandingPageSection = () => {
       }}>
         Improve your grades with class-specific tutors!
       </h1>
-      <button style={{
-        backgroundColor: '#121117',
-        border: 'none',
-        color: 'white',
-        padding: '15px 32px',
-        textAlign: 'center',
-        textDecoration: 'none',
-        display: 'inline-block',
-        fontSize: '16px',
-        margin: '4px 2px',
-        cursor: 'pointer',
-        borderRadius: '4px'
-      }}>
+      <a 
+        href="/SignUp"
+        style={{
+          backgroundColor: '#121117',
+          border: 'none',
+          color: 'white',
+          padding: '15px 32px',
+          textAlign: 'center',
+          textDecoration: 'none',
+          display: 'inline-block',
+          fontSize: '16px',
+          margin: '4px 2px',
+          cursor: 'pointer',
+          borderRadius: '4px'
+        }}
+      >
         Get Started
-      </button>
+      </a>
     </div>
   );
 };
