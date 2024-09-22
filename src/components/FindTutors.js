@@ -14,6 +14,7 @@ export default function FindTutors() {
             </div>
         <SignUpButton/>
         <br/>
+        <h4>Filter by Major:</h4>
         <FilterBar/>
     </div>
   )
